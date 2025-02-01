@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a237e, #7c4dff, #d32f2f);
+            color: #fff;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            padding-right: 50px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #00ff00; /* Mengubah warna font menjadi hijau */
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #008000; /* Warna hijau yang lebih gelap saat hover */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 70px 20px 0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 0;
+        }
+
+        .portfolio-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .portfolio-item a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .portfolio-item a:hover {
+            color: #8b4513;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .download-btn {
+            background: #8b4513;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            background: #6b3410;
+        }
+
+        .about {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact {
+            padding: 50px 0;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .contact form button {
+            background: #8b4513;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact form button:hover {
+            background: #6b3410;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Creative Developer & Designer</p>
+        </div>
+
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio-item">
+                <h3>follow bang</h3>
+                <img src="BULAN.jpg" alt="Project 1 Image">
+                <p>Follow me on Instagram</p>
+                <a href="https://www.instagram.com/as.rofall/" target="_blank">@as.rofall</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>pvz fusion download</h3>
+                <img src="Anime Aesthetic Scenery Wallpaper.jpg" alt="Game Preview">
+                <p>Download my awesome game!</p>
+                <a href="https://drive.google.com/drive/folders/1gHfhptqRku0imdPdTVgy6jQjsj6a5ldr?hl=id" target="_blank">drive</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>mindutry download</h3>
+                <img src="sore.jpg" alt="Game Preview">
+                <p>Download my awesome game!</p>
+                <a href=https://drive.google.com/drive/folders/1gHfhptqRku0imdPdTVgy6jQjsj6a5ldr?hl=id" target="_blank">drive</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>saya adalah manusia yang belajar bila ada kekurangan mohon maaf kritik dan saran akan sangat membantu saya</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message" rows="5"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
